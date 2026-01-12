@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sales Panel </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+        <h1><i class="fas fa-rocket"></i> Content Library for Sales </h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search the document" onkeyup="filterFiles()">
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="quick-access">
+            <div class="card price-card">
+                <i class="fas fa-tag"></i>
+                <h3>Price List</h3>
+                <a href="" target="_blank" class="btn">view</a>
+            </div>
+            <div class="card tech-card">
+                <i class="fas fa-cog"></i>
+                <h3>Technical Catalog</h3>
+                <a href="-" target="_blank" class="btn">Download</a>
+            </div>
+            <div class="card case-card">
+                <i class="fas fa-cog"></i>
+                <h3>Slide Presentation</h3>
+                <a href="-" class="btn">view</a>
+            </div>
+        </section>
+
+        <section class="file-list" id="fileArea">
+            <h2><i class="fas fa-folder-open"></i> Current Documentations</h2>
+            <div class="file-item" data-name="price list pdf">
+                <span><i class="far fa-file-pdf"></i> Price List.pdf</span>
+                <a href="">Open</a>
+            </div>
+            <div class="file-item" data-name="technical documents">
+                <span><i class="far fa-file-word"></i> Technical Documents</span>
+                <a href="">Open</a>
+            </div>
+        </section>
+    </main>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="script.js"></script>
+
+    </body>
+</html>
